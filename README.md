@@ -117,13 +117,14 @@ _reporting_
 `git log` - history of commits  
 `git log --oneline` - abbreviated history (useful for changelogs) 
 
-_undo_   
+_undo a local, unpushed commit_   
 `git reset --soft HEAD^` - undo the most recent commit, retaining file modifications since last commit  
 `git reset --hard HEAD^` - undo the most recent commit, losing file modifications since last commit (state is rewound to previous commit)  
-_cf stackoverflow: [How do you undo the last commit?](http://stackoverflow.com/q/927358/1375695)_
+_cf stackoverflow: [How do you undo the last commit?](http://stackoverflow.com/q/927358/1375695) ...  
+ if you've already pushed to a remote, too late mate._
 
 _filesystem_   
-`git mv <oldname> <newname>` ask git to rename/move a file retaining git history  
+`git mv <oldname> <newname>` rename/move a file whilst retaining git history  
 `git rm --cached <file>` remove a file from the git repository without removing it from the filesystem  
 _cf stackoverflow: [How to remove a file from the index in git?](http://stackoverflow.com/a/2223340/1375695)_
 
