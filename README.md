@@ -6,6 +6,7 @@
 * [Distribution](#distribution)
 * [Commits](#commits)
 * [Commit messages](#commit-messages)
+* [Useful git command](#useful-git-commands)
 
 _inspired by..._  
 * [Vincent Driessen's ultimate branching model](http://nvie.com/posts/a-successful-git-branching-model/)  
@@ -108,5 +109,23 @@ _Never commit code that does not compile_
 A commit message should provide a short description of the commit content. 
      
 Fine-grained commits with meaningful messages greatly facilitate tracking of regression bugs either manually or using [git bisect](https://git-scm.com/docs/git-bisect).
+
+
+##Useful git commands
+_reporting_  
+`git status` - shows status of current branch - modified/staged files, comparision with remote  
+`git log` - history of commits  
+`git log --oneline` - abbreviated history (useful for changelogs) 
+
+_undo_   
+`git reset --soft HEAD^` - undo the most recent commit, retaining file modifications since last commit  
+`git reset --hard HEAD^` - undo the most recent commit, losing file modifications since last commit (state is rewound to previous commit)  
+_cf stackoverflow: [How do you undo the last commit?](http://stackoverflow.com/q/927358/1375695)_
+
+_filesystem_   
+`git mv <oldname> <newname>` ask git to rename/move a file retaining git history  
+`git rm --cached <file>` remove a file from the git repository without removing it from the filesystem  
+_cf stackoverflow: [How to remove a file from the index in git?](http://stackoverflow.com/a/2223340/1375695)_
+
 
 
