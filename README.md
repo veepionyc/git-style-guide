@@ -30,9 +30,10 @@ One 'master' per named developer
 eg   
 `mr_lucas`  
 `rick`  
-`jonathan`    
+`foundry`    
+_'jonathan' is a reserved keyword!_
 
-all other branches should be 'owned' by using a slash-naming convention
+Sub-branches can be created and 'owned' by using a slash-naming convention
 
 l's branches  
 
@@ -45,11 +46,11 @@ ricks
 	r/thing
 	r/other
 	
-jm  
+jm's (foundry)
 
-	j/this
-	j/that 
-	j/theother
+	f/this
+	f/that 
+	f/theother
 	
 None of these branches _needs_ to be pushed to github, but any of them _may_ be pushed up. Owner is responsible for deleting completed branches from github.
 
@@ -57,26 +58,33 @@ None of these branches _needs_ to be pushed to github, but any of them _may_ be 
 
 merging - especially to master - should be a two-way process to minimise conflicts. First merge FROM master TO your branch, then merge the result BACK to master.
 
-example: I have just finished a feature on experimental branch `j/thing`  
+example: I have just finished a feature on an experimental branch `f/thing`. It's good and I want to merge it.  
 
-    git checkout jonathan
-    git merge j/thing
+    git checkout foundry
+    git merge f/thing
     
-when I am satsfied with the result, I want to merge jonathan with master. Ensure your local version of master is in synch with remote (on github):
+when I am satsfied with the result, I want to merge `foundry` with `master`.   
+
+First `git fetch` to update your local copy of remote indexes:
+
+	git fetch -a  
+	
+(This is not necessary but good practice: updates all local copies of remote indexes. `fetch` ensures `git status` will accurately report when a local branch is out of sync with a remote.)
+	
+Ensure your local version of `master` is in synch with remote (on github):
 
 	git checkout master  
-	git fetch -a  //not necessary but good practice: updates all local copies of remote indexes
 	git pull
 
 switch back to the branch we want to merge, then update it with latest master:
 
-    git checkout -b jonathan
+    git checkout -b foundry
     git merge master
     
 now merge back in the other direction..
 
     git checkout master
-    git merge jonathan
+    git merge foundry
  
     
 ##Distribution
