@@ -6,7 +6,7 @@
 * [Distribution](#distribution)
 * [Commits](#commits)
 * [Commit messages](#commit-messages)
-* [Useful git command](#useful-git-commands)
+* [Useful git commands](#useful-git-commands)
 
 _inspired by..._  
 * [Vincent Driessen's ultimate branching model](http://nvie.com/posts/a-successful-git-branching-model/)  
@@ -117,7 +117,7 @@ _reporting_
 `git log` - history of commits  
 `git log --oneline` - abbreviated history (useful for changelogs) 
 
-_undo a local, unpushed commit_   
+_undo_   
 `git reset --soft HEAD^` - undo the most recent commit, retaining file modifications since last commit  
 `git reset --hard HEAD^` - undo the most recent commit, losing file modifications since last commit (state is rewound to previous commit)  
 _cf stackoverflow: [How do you undo the last commit?](http://stackoverflow.com/q/927358/1375695) ...  
