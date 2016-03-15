@@ -123,6 +123,9 @@ _undo_
 `git reset --hard HEAD^` - undo the most recent commit, losing file modifications since last commit (state is rewound to previous commit)  
 _cf stackoverflow: [How do you undo the last commit?](http://stackoverflow.com/q/927358/1375695) ...  
  if you've already pushed to a remote, too late mate._
+ 
+ _back out of a conflicted merge_  
+`git merge --abort`
 
 _filesystem_   
 `git mv <oldname> <newname>` rename/move a file whilst retaining git history  
