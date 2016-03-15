@@ -72,7 +72,7 @@ First `git fetch` to update your local copy of remote indexes:
 	
 (This is not necessary but good practice: updates all local copies of remote indexes. `fetch` ensures `git status` will accurately report when a local branch is out of sync with a remote.)
 	
-Ensure your local version of `master` is in synch with remote (on github):
+Ensure your local version of `master` is in sync with remote (on github):
 
 	git checkout master  
 	git pull
