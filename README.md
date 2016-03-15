@@ -7,6 +7,8 @@
 * [Commits](#commits)
 * [Commit messages](#commit-messages)
 * [Useful git commands](#useful-git-commands)
+* [Useful git tools](#useful-git-tools)
+
 
 _inspired by..._  
 * [Vincent Driessen's ultimate branching model](http://nvie.com/posts/a-successful-git-branching-model/)  
@@ -125,12 +127,21 @@ _cf stackoverflow: [How do you undo the last commit?](http://stackoverflow.com/q
  if you've already pushed to a remote, too late mate._
  
  _back out of a conflicted merge_  
-`git merge --abort`
+`git merge --abort`  
+cf [Dealing with merge conflicts](https://www.git-tower.com/learn/git/ebook/command-line/advanced-topics/merge-conflicts)
 
 _filesystem_   
 `git mv <oldname> <newname>` rename/move a file whilst retaining git history  
 `git rm --cached <file>` remove a file from the git repository without removing it from the filesystem  
 _cf stackoverflow: [How to remove a file from the index in git?](http://stackoverflow.com/a/2223340/1375695)_
 
+
+##Useful git tools
+2. XCode git management is not to be trusted. Don't use.
+3. For simple git tasks, use the commandline.
+4. For GUI tasks (like resolving merge commits, browsing commit history):  
+    - [SmartGit](http://www.syntevo.com/smartgit/)
+    - [SourceTree](https://www.sourcetreeapp.com)
+    
 
 
