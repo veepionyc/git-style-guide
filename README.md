@@ -108,8 +108,9 @@ _Never commit code that does not compile_
 
 A commit message should provide a short description of the commit content. 
      
-Fine-grained commits with meaningful messages greatly facilitate tracking of regression bugs either manually or using [git bisect](https://git-scm.com/docs/git-bisect).
+Fine-grained commits with meaningful messages greatly facilitate tracking of regression bugs either manually or using [git bisect](https://git-scm.com/docs/git-bisect). 
 
+Do not use the same commit message repeatedly -  no _cont_  _cont_ _cont_
 
 ##Useful git commands
 _reporting_  
