@@ -1,5 +1,5 @@
 
-#VeePiO Git Style Guide
+## VeePiO Git Style Guide
 
 * [Branching](#branching)  
 * [Merging](#merging)
@@ -15,7 +15,7 @@ _inspired by..._
 * [git flow](https://github.com/nvie/gitflow/tree/master)
 
 
-##Branching    
+## Branching    
 The only two REQUIRED branches on github:    
 - `develop`  
 - `master`  
@@ -32,7 +32,7 @@ All other branches should have a clearly-labelled function. Start new features u
 	
 None of these branches _needs_ to be pushed to github, but any of them _may_ be pushed up. Owner is responsible for deleting completed branches from github.
 
-##Merging
+## Merging
 
 merging - especially to develop - should be a two-way process to minimise conflicts. First merge FROM develop TO your branch, then merge the result BACK to develop.
 
@@ -63,7 +63,7 @@ now merge back in the other direction..
     
 
 
-##Commits
+## Commits
 
 Make commits little and often. 
 
@@ -71,7 +71,7 @@ One commit should relate to one meaningful unit of work.
 
 _Never commit code that does not compile_ 
 
-##Commit messages
+## Commit messages
 
 A commit message should provide a short description of the commit content. 
      
@@ -79,7 +79,7 @@ Fine-grained commits with meaningful messages greatly facilitate tracking of reg
 
 Do not use the same commit message repeatedly -  no _cont_  _cont_ _cont_
 
-##Useful git commands
+## Useful git commands
 _reporting_  
 `git status` - shows status of current branch - modified/staged files, comparision with remote  
 `git log` - history of commits  
@@ -101,7 +101,7 @@ _filesystem_
 _cf stackoverflow: [How to remove a file from the index in git?](http://stackoverflow.com/a/2223340/1375695)_
 
 
-##Useful git tools
+## Useful git tools
 2. XCode git management is not to be trusted. Don't use.
 3. For simple git tasks, use the commandline.
 4. For GUI tasks (like resolving merge commits, browsing commit history):  
